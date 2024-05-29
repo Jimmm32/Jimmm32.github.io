@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.container{
+    margin: 100px 100px;
+}
+
+:root{
+    --background: #1A4D2E;
+    --fontColor: white;
+    --buttonColor: #22ac59;
+    --hoverColor: #3ecf78;
+    --imageHeight: 1000px;
+    --imageWidth: 1500px;
+    --imageHeight2: 600px;
+    --imageHeight3: 400px;
+    --breedsBg: #DDDDDD;
+    --headingSize: 60px;
+    --gapSize: 30px;
+    --gapSize2: 50px;
+    --h3Size: 35px;
+    --contentP: 22px;
+    --contentBg: #F6F5F5;
+    --borderRadius: 10px;
+    --ptagGray: gray;
+    --imageheight: 200px;
+    --imagewidth: 250px;
+}
+
+html{
+    background-color: #F3F8FF;
+}
+
+.header-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--background);
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-banner img {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar button, .navbar-mobile button {
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar button:hover, .navbar-mobile button:hover{
+    color: var(--hoverColor);
+}
+
+.featured p {
+    font-weight: 600;
+}
+
+.navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.shop-button button{
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    background-color: var(--buttonColor);
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--fontColor);
+
+}
+
+.shop-button button:hover {
+    background-color: var(--hoverColor);
+}
+
+.display{
+    display: none;
+}
+
+.copyright p {
+    font-size: 17px;
+    text-align: center;
+    color: var(--fontColor);
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.copyright {
+    background-color: var(--background);
+    height: 62px;
+}
+
+.mobile-menu-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-icon button {
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.mobile-menu-icon h2 {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-weight: 400;
+    display: none;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured img{
+    width: var(--imagewidth);
+    height: var(--imageheight);
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0px auto;
+    height: auto;
+}
+
+.info {
+    width: 650px;
+    height: 360px;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.info2 {
+    padding-top: 35px;
+}
+
+.info h3, .info h1{
+    font-weight: 600;
+}
+
+#noThanks{
+    padding: 10px 40px;
+    border: none;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+#getDisc{
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    max-width: 100%;
+    transition: all .4s ease;
+}
+
+#getDisc:hover{
+    background-color: #363434;
+}
+
+.disc-buttons {
+    margin-top: 30px;
+}
+
+.featured-cover {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.third-content h1, #promo{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 40px;
+    color: #1A4D2E;
+    text-align: center;
+}
+
+#promo{
+    margin-bottom: 40px;
+}
+
+.featured{
+    width: 250px;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid grey;
+}
+
+@media (max-width: 1280px){
+    .logo-banner img{
+        width: 70px;
+        height: 70px;
+    }
+    .navbar button{
+        font-size: 20px!important;
+    }
+    .navbar {
+        gap: 30px;
+    }
+
+    .shop-button button{
+        padding: 8px 35px;
+    }
+    .container{
+        margin: 50px 50px;
+    }
+}
+
+@media (max-width: 1024px){
+    .logo-banner img{
+        width: 60px;
+        height: 60px;
+    }
+    .navbar {
+        gap: 20px;
+    }
+    .navbar button{
+        font-size: 15px!important;
+    }
+    .shop-button button {
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .third-content h1, #promo{
+        font-size: 30px;
+    }
+    .display, .mobile-menu-icon h2{
+        display: block;
+    }
+    .header-banner , #blocked, #shop-button2{
+        display: none;
+    }
+    .header-banner2 {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        background-color: var(--background);
+        gap: 10px;
+        align-items: flex-end;
+    }
+
+    .navbar-mobile button {
+        font-size: 22px;
+    }
+    .navbar-mobile{
+        gap: 20px;
+    }
+
+    .shop-button button{
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+    .navbar-mobile{
+        gap: 10px;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 640px){
+
+    .navbar-mobile button {
+        font-size: 19px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .navbar button {
+        font-size: 25px;
+        background: transparent;
+        border: none;
+        color: white;
+    }
+
+    .shop-button button{
+        font-size: 18px;
+    }
+
+    .container{
+        margin: 50px 0px;
+    }
+}
