@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+:root{
+    --headingSize: 30px;
+    --headingWeight: 400;
+    --pTagSize: 14px;
+    --inputHeight: 35px;
+}
+
+#admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1{
+    font-size: var(--headingSize);
+    font-weight: var(--headingWeight);
+}
+
+p{
+    font-size: var(--pTagSize);
+    font-weight: var(--headingWeight);
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    background: url("hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: -1;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 100%;
+    gap: 10px;
+    padding: 50px 50px;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.3),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.remember {
+    display: flex;
+    gap: 5px;
+}
+
+.remember-me {
+    display: flex;
+    gap: 152px;
+}
+
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    max-width: 392px;
+    width: 100%;
+    height: var(--inputHeight);
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.3),
+        rgba(0,0,0,0.2)
+    );
+}
+
+#forgot, .hero-banner button a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-banner button a{
+    color: white!important;
+}
+
+.hero-banner button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 402px;
+    border: 1px solid #2E343A;
+    background-color: #2E343A;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-banner button:hover{
+    scale: 1.02;
+}
+
+#terra{
+    color: white;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
